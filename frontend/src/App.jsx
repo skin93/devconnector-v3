@@ -5,6 +5,7 @@ import { GlobalStyles, theme } from './styles/Global';
 import Register from './views/auth/Register';
 import Login from './views/auth/Login';
 import Landing from './views/Landing/Landing';
+import Alert from './features/alert';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Fragment>
         <GlobalStyles />
         <Router>
+          <Alert />
           <Switch>
             <Route path='/' component={Landing} exact />
             <Route path='/register' exact component={Register} />
